@@ -31,21 +31,9 @@ a{
   top: 0;
   width: 100%;
   box-sizing: border-box;
-  z-index: 1000; /* Assegura que o cabeçalho fique acima de outros elementos */
-}
-
-.header__color-change{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  position: fixed; /* Torna o cabeçalho fixo no topo */
-  top: 0;
-  width: 100%;
-  box-sizing: border-box;
   backdrop-filter: blur(50px); /* Adiciona um efeito de desfoque */
   background-color: rgba(255, 255, 255, 0.5);
-  z-index: 1000;
+  z-index: 1000;/* Assegura que o cabeçalho fique acima de outros elementos */
 }
 
 .cover__header-img{
@@ -62,7 +50,7 @@ a{
 .cover__header-nav-list-item-text{
   transition: .5s;
   font-size: 1rem;
-  padding: .5rem 1rem;
+  padding: .5rem 1rem !important;
 }
 
 .cover__header-nav-list-item-text:hover{
@@ -457,35 +445,26 @@ a{
     background-size: cover;
     height: 100vh;
   }
-
   
-.cover__header {
-  background: none;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
-  position: fixed; /* Torna o cabeçalho fixo no topo */
-  top: 0;
-  box-sizing: border-box;
-  z-index: 1000; /* Assegura que o cabeçalho fique acima de outros elementos */
-}
-
-.header__color-change{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 1rem;
-  position: fixed; /* Torna o cabeçalho fixo no topo */
-  top: 0;
-  gap: 1.5rem;
-
-  box-sizing: border-box;
-  backdrop-filter: blur(50px); /* Adiciona um efeito de desfoque */
-  background-color: rgba(255, 255, 255, 0.5);
-  z-index: 1000;
-}
-
+  .cover__header {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    position: fixed; /* Torna o cabeçalho fixo no topo */
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    backdrop-filter: blur(50px); /* Adiciona um efeito de desfoque */
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1000;/* Assegura que o cabeçalho fique acima de outros elementos */
+  }
+    
+  .cover__header-img{
+    width: 50px;
+  }
+  
 
   .cover__header-nav-list{
     display: flex;
@@ -497,13 +476,14 @@ a{
   
   .cover__header-nav-list-item-text{
     transition: .5s;
-    font-size: 1rem;
+    font-size: .8rem;
     padding: .5rem 1rem;
   }
 
-  .cover__header-nav-list-item-text{
+  .cover__header-nav-list-item-text:hover{
     transition: .5s;
     font-size: .8rem;
+    padding: .5rem 1rem;
   }  
      
   .cover__container-title{
