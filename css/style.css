@@ -62,6 +62,7 @@ a{
 .cover__header-nav-list-item-text{
   transition: .5s;
   font-size: 1rem;
+  padding: .5rem 1rem;
 }
 
 .cover__header-nav-list-item-text:hover{
@@ -112,7 +113,6 @@ a{
 
 .about__title{
   font-size: 7rem;
-  padding-left: 2rem;
   color: rgb(232, 232, 232);
 }
 
@@ -456,6 +456,49 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+  }
+
+  
+.cover__header {
+  background: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  position: fixed; /* Torna o cabeçalho fixo no topo */
+  top: 0;
+  box-sizing: border-box;
+  z-index: 1000; /* Assegura que o cabeçalho fique acima de outros elementos */
+}
+
+.header__color-change{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed; /* Torna o cabeçalho fixo no topo */
+  top: 0;
+  gap: 1.5rem;
+
+  box-sizing: border-box;
+  backdrop-filter: blur(50px); /* Adiciona um efeito de desfoque */
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+}
+
+
+  .cover__header-nav-list{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    gap: .5rem;
+  }
+  
+  .cover__header-nav-list-item-text{
+    transition: .5s;
+    font-size: 1rem;
+    padding: .5rem 1rem;
   }
 
   .cover__header-nav-list-item-text{
