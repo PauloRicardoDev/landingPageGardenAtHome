@@ -506,8 +506,7 @@ a{
   }
   
   .benefits__title{
-    font-size: 4rem;
-    padding-left: 2rem;
+    font-size: 2.5rem;
     color:#a0f60030;
   }
 
@@ -530,8 +529,7 @@ a{
   }
 
   .care__title{
-    font-size: 4rem;
-    padding-left: 2rem;
+    font-size: 2.5rem;
     color:#391e0011;
   }
 
@@ -543,8 +541,8 @@ a{
   }
 
   .testimony__title{
-    font-size: 4rem;
-    padding-left: 2rem;
+    font-size: 2.5rem;
+
     color: rgb(232, 232, 232);
   }
 }
